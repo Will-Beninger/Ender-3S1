@@ -17,7 +17,10 @@ def copytree(src, dst, symlinks=False, ignore=None):
             shutil.copy2(s, d)
 
 def replace_define(field, value):
-	for define in env['CPPDEFINES']:
+	# Needed to backport this commit from Marlin project as PlatformIO wouldn't compile
+	# https://github.com/MarlinFirmware/Marlin/commit/c2decc3e2e30c7cb0f517b7e40d8138a8c1d4a81#diff-ebd995a07ef25d75984a385aecf38462ed81ffedce977c742e6cf8e273501f9bR20
+	envdefs = env['CPPDEFINES'].copy()
+	for define in envdefs:
 		if define[0] == field:
 			env['CPPDEFINES'].remove(define)
 	env['CPPDEFINES'].append((field, value))
