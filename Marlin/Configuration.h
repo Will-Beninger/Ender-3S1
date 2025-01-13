@@ -145,8 +145,9 @@
 //#define BLUETOOTH
 
 //Choose your mother board IC
-// #define STM32F401RC_creality
-#define STM32F103RET6_creality
+#define STM32F401RC_creality
+//Commenting out F1 Motherboard as I have an F4
+//#define STM32F103RET6_creality
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
@@ -161,7 +162,7 @@
 #if ENABLED(Z_AXIS_LIMIT_MODE)
 #define SHORT_BUILD_VERSION "V3.0.3_Z"
 #else
-#define SHORT_BUILD_VERSION "V3.0.3"
+#define SHORT_BUILD_VERSION "V3.0.3_D"
 #endif
 
 
