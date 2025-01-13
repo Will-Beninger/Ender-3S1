@@ -1,3 +1,18 @@
+# Update Note:
+This is the stock Ender 3 S1 firmware branch with only a few small changes to make it compile with PlatformIO. I was able to upgrade my Ender 3 S1 (Not Plus, Not Pro, stock) to 3.0.3_D version with this latest commit. I have the F4 board, modify those 2 lines in the most recent commit if you have the F1.
+
+Do note, this does include some merges that were included in the Creality Repo that enable features that are not found in the stock firmware for download from Creality directly. This includes:
+1. GCode Macros
+2. Z_MIN_PROBE_REPEATABILITY_TEST / M48
+3. HOST_ACTION_COMMANDS - Used for OctoPi/OctoPrint feedback from Printer
+
+I successfully built this following elements from [this guide](https://www.youtube.com/watch?v=nICJinTdYp8)
+
+# Issues:
+1. Bed Leveling text is mangled. This is likely a display firmware issue as I went from 3.0.4_C to 3.0.3, will try a display firmware downgrade
+
+
+# Stock Creality Notes Below:
 # Ender-3S1 Firmware
 
 Creality, dedicating to bringing benefits to human beings via technology innovations, has received support from both users and 3D printing enthusiasts. With gratefulness, Creality wants to continue the pace of making the world a better place with you all. This time, Creality will open the source code and we believe GitHub is the way to go. 
