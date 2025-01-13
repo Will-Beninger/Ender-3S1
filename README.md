@@ -8,9 +8,6 @@ Do note, this does include some merges that were included in the Creality Repo t
 
 I successfully built this following elements from [this guide](https://www.youtube.com/watch?v=nICJinTdYp8)
 
-# Issues:
-1. Bed Leveling text is mangled. This is likely a display firmware issue as I went from 3.0.4_C to 3.0.3, will try a display firmware downgrade
-
 
 # Stock Creality Notes Below:
 # Ender-3S1 Firmware
